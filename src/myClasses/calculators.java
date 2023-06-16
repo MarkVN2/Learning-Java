@@ -31,8 +31,24 @@ public class calculators {
         }
     }
     public static void sum() {
-        System.out.println("What is the numbers that we should be summing up? separate the numbers by spaces");
-        String numbers = scanner.next();
+        System.out.println("What is the quantity of numbers you want to sum up?");
+        int n = scanner.nextInt();
+        int[] nums = new int[n];
+        int total = 0;
+
+        System.out.println("Alright, let's type the numbers we are going to sum up.");
+        for (int i = 0; i < n ; i++) 
+        {
+            nums[i]=scanner.nextInt();  
+        }
+        
+        for (int i = 0; i < n ; i++){
+            total = total + nums[i];
+        }
+
+        String result = String.format("The sum of these numbers is %2d", total);
+
+        System.out.println(result);
     }
     public static void graph(){
         System.out.println("Nothing here yet");
