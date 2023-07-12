@@ -2,7 +2,7 @@
 //Importing the Scanner
 import java.util.Scanner;
 //Importing myClasses
-import static myClasses.crime.*;
+
 import static myClasses.calculators.*;
 
 
@@ -33,7 +33,7 @@ public class App {
             System.out.println("===================\n");
             System.out.println("[1]- Calculators");
             System.out.println("[2]- String Formatters");
-            System.out.println("[3]- Commit crimes");  
+            System.out.println("[3]- Messing Around");  
             System.out.println("\n===================");
 
             int response = scanner.nextInt();
