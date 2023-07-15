@@ -4,21 +4,30 @@ import java.util.Scanner;
 //Importing myClasses
 
 import static myClasses.calculators.*;
+import static myClasses.stringform.*;
 
 
 public class App {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
-            int response = Menu();
+       
+        System.out.println("===================\n");
+        System.out.println("[1]- Calculators");
+        System.out.println("[2]- String Formatters");
+        System.out.println("[3]- Messing Around");  
+        System.out.println("\n===================");
+
+        int response = scanner.nextInt();
+
             switch (response) {
                 default:
-                    Menu();
+                    main(args);
                 case 1:
                     calculators_gui();
                     scanner.close();
                     break;
                 case 2:
-                    System.out.println("Nothing here yet");
+                    formatter_gui();
                     scanner.close();
                     break;
                 case 3:
@@ -27,19 +36,6 @@ public class App {
                     break;
             }
         }
-    
-        static int Menu(){
-
-            System.out.println("===================\n");
-            System.out.println("[1]- Calculators");
-            System.out.println("[2]- String Formatters");
-            System.out.println("[3]- Messing Around");  
-            System.out.println("\n===================");
-
-            int response = scanner.nextInt();
-            return response;
-        }
-
 }
         
         

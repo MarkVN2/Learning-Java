@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class cheatsheet {
 
+    static void all(){
+
     //  ---------- Declaration of variables in java ---------- 
 
     String phrase = "we doin' something together?";
@@ -18,13 +20,17 @@ public class cheatsheet {
     boolean response  = false;  
     
     // ---------- Use to read input ----------
+
     Scanner scanner = new Scanner(System.in);
 
     // ----------  Print in Terminal ---------- 
     System.out.println("Hello, World!");
     System.out.println("What is your age?");
-
+    
+    age = scanner.nextByte();
     
     phrase = String.format("Your age is : %2d", age);
-   
+
+    System.out.println(phrase);
+    }
 }
