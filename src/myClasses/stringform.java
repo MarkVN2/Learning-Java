@@ -27,12 +27,13 @@ public class stringform {
                 scanner.close();
                 break;
             case 3:
-                System.out.println("Nothing here yet");
+                inverter();
                 scanner.close();
                 break;
         }
     }
     public static void remove_dupe(){
+        
         System.out.println("What is the word/phrase you want to remove the duplicated characters?");
 
         String phrase = scanner.next();
@@ -58,6 +59,15 @@ public class stringform {
     public static void inverter(){
         System.out.println("What is the word/phrase you want to invert?");
 
-         String phrase = scanner.next();
+        String phrase = scanner.next();
+        int phrase_len = phrase.length();
+        String inv_phrase = "";
+
+        for (phrase_len = phrase_len - 1; phrase_len > -1 ; phrase_len = phrase_len - 1 ){
+            char word = phrase.charAt(phrase_len);
+            inv_phrase = inv_phrase + word;
+        }
+        System.out.println(inv_phrase);
     }
-}
+    }
+
